@@ -32,7 +32,7 @@ public class Personagem : MonoBehaviour
 
     void MovePlayer()
     {
-        rb.linearVelocity += new Vector2(horizontal, vertical) * velocidade;
+        rb.linearVelocity = new Vector2(horizontal, vertical) * velocidade;
         rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -velocidadeMax, velocidadeMax);
         rb.linearVelocityY = Mathf.Clamp(rb.linearVelocityY, -velocidadeMax, velocidadeMax);
     }
