@@ -7966,7 +7966,7 @@ GameObject:
   - component: {fileID: 320966067}
   - component: {fileID: 320966066}
   - component: {fileID: 320966065}
-  - component: {fileID: 320966064}
+  - component: {fileID: 320966069}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -7974,21 +7974,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &320966064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320966063}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e23909c78c4a654abb63ec30a56b92f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidade: 5
-  velocidadeMax: 5
-  posicaoNPC: {fileID: 0}
 --- !u!50 &320966065
 Rigidbody2D:
   serializedVersion: 5
@@ -8133,6 +8118,20 @@ Transform:
   - {fileID: 1700248806}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!114 &320966069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320966063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30bc4b73732f0044db8af33225c98f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alvo: {fileID: 0}
+  velocidade: 2
 --- !u!1 &324741381
 GameObject:
   m_ObjectHideFlags: 0
@@ -9015,7 +9014,7 @@ GameObject:
   - component: {fileID: 426503244}
   - component: {fileID: 426503243}
   - component: {fileID: 426503242}
-  - component: {fileID: 426503241}
+  - component: {fileID: 426503246}
   m_Layer: 0
   m_Name: NPC (4)
   m_TagString: Untagged
@@ -9023,21 +9022,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &426503241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 426503240}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e23909c78c4a654abb63ec30a56b92f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidade: 5
-  velocidadeMax: 5
-  posicaoNPC: {fileID: 0}
 --- !u!50 &426503242
 Rigidbody2D:
   serializedVersion: 5
@@ -9182,6 +9166,20 @@ Transform:
   - {fileID: 679403171}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!114 &426503246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426503240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30bc4b73732f0044db8af33225c98f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alvo: {fileID: 0}
+  velocidade: 2
 --- !u!1 &436560179
 GameObject:
   m_ObjectHideFlags: 0
@@ -10668,90 +10666,6 @@ CompositeCollider2D:
         Y: -50000000
       - X: 150000000
         Y: -60000000
-    - - X: -42500000
-        Y: 54062500
-      - X: -42875000
-        Y: 54375000
-      - X: -41562500
-        Y: 54375000
-      - X: -40312500
-        Y: 55000000
-      - X: -40312500
-        Y: 56875000
-      - X: -40625000
-        Y: 57812500
-      - X: -43125000
-        Y: 57812500
-      - X: -44375000
-        Y: 56562500
-      - X: -44375000
-        Y: 55625000
-      - X: -46250000
-        Y: 57187500
-      - X: -48125000
-        Y: 57187500
-      - X: -49687500
-        Y: 54687500
-      - X: -49687500
-        Y: 50937500
-      - X: -42500000
-        Y: 50937500
-    - - X: 107500000
-        Y: 44062500
-      - X: 107125000
-        Y: 44375000
-      - X: 108437504
-        Y: 44375000
-      - X: 109687504
-        Y: 45000000
-      - X: 109687504
-        Y: 46875000
-      - X: 109375000
-        Y: 47812500
-      - X: 106875000
-        Y: 47812500
-      - X: 105625000
-        Y: 46562500
-      - X: 105625000
-        Y: 45625000
-      - X: 103750000
-        Y: 47187500
-      - X: 101875000
-        Y: 47187500
-      - X: 100312496
-        Y: 44687500
-      - X: 100312496
-        Y: 40937500
-      - X: 107500000
-        Y: 40937500
-    - - X: -72500000
-        Y: 34062500
-      - X: -72875000
-        Y: 34375000
-      - X: -71562496
-        Y: 34375000
-      - X: -70312496
-        Y: 35000000
-      - X: -70312496
-        Y: 36875000
-      - X: -70625000
-        Y: 37812500
-      - X: -73125000
-        Y: 37812500
-      - X: -74375000
-        Y: 36562500
-      - X: -74375000
-        Y: 35625000
-      - X: -76250000
-        Y: 37187500
-      - X: -78125000
-        Y: 37187500
-      - X: -79687504
-        Y: 34687500
-      - X: -79687504
-        Y: 30937500
-      - X: -72500000
-        Y: 30937500
     - - X: 118437504
         Y: -39687500
       - X: 119687504
@@ -11125,48 +11039,6 @@ CompositeCollider2D:
       - {x: 15.093759, y: -4.9687576}
       - {x: 15.124912, y: -5}
       - {x: 15, y: -5.000029}
-    - - {x: -4.250029, y: 5.09375}
-      - {x: -4.2500095, y: 5.406258}
-      - {x: -4.287397, y: 5.4375}
-      - {x: -4.1562443, y: 5.437503}
-      - {x: -4.03125, y: 5.5000167}
-      - {x: -4.0312514, y: 5.6875043}
-      - {x: -4.06252, y: 5.78125}
-      - {x: -4.3125076, y: 5.7812424}
-      - {x: -4.4375, y: 5.656239}
-      - {x: -4.4375577, y: 5.562548}
-      - {x: -4.625009, y: 5.71875}
-      - {x: -4.812508, y: 5.7187376}
-      - {x: -4.96875, y: 5.4687424}
-      - {x: -4.968721, y: 5.09375}
-    - - {x: 10.74997, y: 4.09375}
-      - {x: 10.74999, y: 4.406258}
-      - {x: 10.712604, y: 4.4375}
-      - {x: 10.843756, y: 4.437503}
-      - {x: 10.968751, y: 4.5000167}
-      - {x: 10.968749, y: 4.6875043}
-      - {x: 10.93748, y: 4.78125}
-      - {x: 10.687493, y: 4.7812424}
-      - {x: 10.5625, y: 4.656239}
-      - {x: 10.562443, y: 4.562548}
-      - {x: 10.37499, y: 4.71875}
-      - {x: 10.187492, y: 4.7187376}
-      - {x: 10.03125, y: 4.4687424}
-      - {x: 10.03128, y: 4.09375}
-    - - {x: -7.2500296, y: 3.09375}
-      - {x: -7.2500095, y: 3.406258}
-      - {x: -7.287397, y: 3.4375}
-      - {x: -7.1562443, y: 3.4375029}
-      - {x: -7.0312495, y: 3.500017}
-      - {x: -7.0312514, y: 3.687504}
-      - {x: -7.06252, y: 3.78125}
-      - {x: -7.312507, y: 3.7812424}
-      - {x: -7.4375, y: 3.6562393}
-      - {x: -7.4375577, y: 3.5625482}
-      - {x: -7.6250095, y: 3.71875}
-      - {x: -7.812508, y: 3.7187376}
-      - {x: -7.9687505, y: 3.4687424}
-      - {x: -7.968721, y: 3.09375}
     - - {x: 11.687498, y: -4}
       - {x: 11.843756, y: -3.9687345}
       - {x: 11.968751, y: -3.5312464}
@@ -12225,7 +12097,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 1
   - first: {x: 5, y: 3, z: 0}
     second:
       serializedVersion: 2
@@ -12275,7 +12147,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 1
   - first: {x: 15, y: 4, z: 0}
     second:
       serializedVersion: 2
@@ -12345,7 +12217,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 1
   - first: {x: 1, y: 5, z: 0}
     second:
       serializedVersion: 2
@@ -18213,7 +18085,7 @@ GameObject:
   - component: {fileID: 1224705565}
   - component: {fileID: 1224705564}
   - component: {fileID: 1224705563}
-  - component: {fileID: 1224705562}
+  - component: {fileID: 1224705567}
   m_Layer: 0
   m_Name: NPC (3)
   m_TagString: Untagged
@@ -18221,21 +18093,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1224705562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224705561}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e23909c78c4a654abb63ec30a56b92f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidade: 5
-  velocidadeMax: 5
-  posicaoNPC: {fileID: 0}
 --- !u!50 &1224705563
 Rigidbody2D:
   serializedVersion: 5
@@ -18380,6 +18237,20 @@ Transform:
   - {fileID: 1002094693}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!114 &1224705567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224705561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30bc4b73732f0044db8af33225c98f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alvo: {fileID: 0}
+  velocidade: 2
 --- !u!1 &1234043300
 GameObject:
   m_ObjectHideFlags: 0
@@ -22073,7 +21944,7 @@ GameObject:
   - component: {fileID: 1808710609}
   - component: {fileID: 1808710608}
   - component: {fileID: 1808710607}
-  - component: {fileID: 1808710606}
+  - component: {fileID: 1808710611}
   m_Layer: 0
   m_Name: NPC (2)
   m_TagString: Untagged
@@ -22081,21 +21952,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1808710606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808710605}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e23909c78c4a654abb63ec30a56b92f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidade: 5
-  velocidadeMax: 5
-  posicaoNPC: {fileID: 0}
 --- !u!50 &1808710607
 Rigidbody2D:
   serializedVersion: 5
@@ -22240,6 +22096,20 @@ Transform:
   - {fileID: 656889523}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!114 &1808710611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808710605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30bc4b73732f0044db8af33225c98f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alvo: {fileID: 0}
+  velocidade: 2
 --- !u!1 &1809289259
 GameObject:
   m_ObjectHideFlags: 0
@@ -23382,8 +23252,7 @@ GameObject:
   - component: {fileID: 1938893179}
   - component: {fileID: 1938893178}
   - component: {fileID: 1938893177}
-  - component: {fileID: 1938893176}
-  - component: {fileID: 1938893175}
+  - component: {fileID: 1938893180}
   m_Layer: 0
   m_Name: NPC (1)
   m_TagString: Untagged
@@ -23391,48 +23260,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1938893175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938893174}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e23909c78c4a654abb63ec30a56b92f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidade: 5
-  velocidadeMax: 5
-  posicaoNPC: {fileID: 0}
---- !u!50 &1938893176
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938893174}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1938893177
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23550,6 +23377,20 @@ Transform:
   - {fileID: 1689583144}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!114 &1938893180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938893174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30bc4b73732f0044db8af33225c98f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alvo: {fileID: 0}
+  velocidade: 2
 --- !u!1 &1966362977
 GameObject:
   m_ObjectHideFlags: 0
